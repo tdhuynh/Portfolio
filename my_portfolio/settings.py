@@ -25,7 +25,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['tdh-portfolio.herokuapp.com', 'localhost', 'tommyhuynh.io']
 
 
 # Application definition
@@ -81,6 +81,12 @@ DATABASES = {
     }
 }
 
+import dj_database_url
+
+heroku_database = dj_database_url.config()
+if heroku_database:
+    DATABASES['default'] = heroku_database
+
 
 # Password validation
 # https://docs.djangoproject.com/en/1.10/ref/settings/#auth-password-validators
@@ -119,4 +125,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
