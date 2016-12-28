@@ -1,4 +1,4 @@
-# porfolio
+# Portfolio
 my portfolio from tiy
 
 This is my portfolio showcasing my applications created during my time at The Iron Yard.
