@@ -33,6 +33,9 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <link href="http://vjs.zencdn.net/5.8.8/video-js.css" rel="stylesheet">
+    <script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+
     <script>
     function resizeIframe(obj) {
       obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
@@ -95,6 +98,38 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">About</h2>
+                    <div class="row">
+                      <div class="col-sm-3 text-center">
+                        <div class="team-member">
+                          <img src="static/img/tommy.jpg" class="img-responsive img-circle" alt="">
+                        </div>
+                      </div>
+                      <div class="col-sm-3 text-center">
+                        <h4>Who I Am</h4>
+                        <p class="text-muted">
+                          I graduated from the University of South Carolina in 2015 with a degree in Exercise Science.
+                          In 2016, I enrolled in the backend engineering course at The Iron Yard to pursue a career in programming.
+                          Though rigorous, I grew to love coding even more throughout the course. I find the work I do challenging and rewarding.
+                          I am an avid fan of video games, board games, and music.
+                        </p>
+                      </div>
+                      <div class="col-sm-3 text-center">
+                        <h4>What I Do</h4>
+                        <p class="text-muted">
+                          I have created many applications at The Iron Yard from a simple operations calculator to a profile-based search engine.
+                          Though each project is of varying complexity, I bring each to life by utilizing the tools and skills I have learned.
+                        </p>
+                      </div>
+                      <div class="col-sm-3 text-center">
+                        <h4>Why I Do It</h4>
+                        <p class="text-muted">
+                          I enjoy solving problems. Just like in video games, you have objectives and goals to work for. Coding is no different.
+                          Every mistake and setback is a new opportunity for me to learn and grow as a developer.
+                          The satisfaction I get when I fix errors and bugs and create working code reminds me that programming is what I am passionate about.
+                        </p>
+                      </div>
+                    </div><br><br>
+                    <h2 class="section-heading">TL;DR</h2>
                     <h3 class="section-subheading text-muted">
                       I am a recent graduate of the backend engineering course at The Iron Yard in Greenville, South Carolina.
                       During my time there, I learned the skills to become a web developer. Programming puts me in the mindset I am eager to be in
@@ -114,7 +149,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Portfolio</h2>
-                    <h3 class="section-subheading text-muted">Some of the work I have accomplished during my time at TIY.
+                    <h3 class="section-subheading text-muted">Some of the work I have accomplished.
                       <br>
                        Click on the images to read more about the application.</h3>
                 </div>
@@ -133,12 +168,14 @@
                         <h4>Seekers</h4>
                         <p class="text-muted">Final Project Application</p>
                     </div>
+
                     <br>
                     <div class="row text-center">
                       <a href="http://arcane-reef-60277.herokuapp.com/" target="_blank"><button type="button" class="btn btn-primary btn-lg">View Live</button></a>
                       <a href="https://github.com/tdhuynh/final_project" target="_blank"><button type="button" class="btn btn-primary btn-lg">View Code</button></a>
+                      <br><br>
+                      <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-play "></i> Video Demo</button></a>
                     </div>
-
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
                     <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
@@ -252,58 +289,25 @@
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Contact Me</h2>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-3 text-center">
-                    <div class="team-member">
-                        <img src="static/img/tommy.jpg" class="img-responsive img-circle" alt="">
-                        <!-- <h4>Concerns or questions? Contact me below!</h4> -->
-                        <h3>Tommy Huynh</h3>
-                        <h5>Web Developer</h5>
-                        <ul class="list-inline social-buttons">
-                            <li>
-                              <a href="mailto:tommyhuynh93@gmail.com?subject=Hi Tommy, I would love to chat!"><i class="fa fa-envelope"></i></a>
-                            </li>
-                            <li><a href="https://twitter.com/tommyhuynh93"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="https://github.com/tdhuynh"><i class="fa fa-github"></i></a>
-                            </li>
-                            <li><a href="https://www.linkedin.com/in/tommy-d-huynh"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-3 text-center">
-                  <h4>Who I Am</h4>
-                  <p class="text-muted">
-                    I graduated from the University of South Carolina in 2015 with a degree in Exercise Science.
-                    In 2016, I enrolled in the backend engineering course at The Iron Yard to pursue a career in programming.
-                    Though rigorous, I grew to love coding even more throughout the course. I find the work I do challenging and rewarding.
-                    I am an avid fan of video games, board games, and music.
-                  </p>
-
-                </div>
-                <div class="col-sm-3 text-center">
-                  <h4>What I Do</h4>
-                  <p class="text-muted">
-                    I have created many applications at The Iron Yard from a simple operations calculator to a profile-based search engine.
-                    Though each project is of varying complexity, I bring each to life by utilizing the tools and skills I have learned.
-                  </p>
-                </div>
-                <div class="col-sm-3 text-center">
-                  <h4>Why I Do It</h4>
-                  <p class="text-muted">
-                    I enjoy solving problems. Just like in video games, you have objectives and goals to work for. Coding is no different.
-                    Every mistake and setback is a new opportunity for me to learn and grow as a developer.
-                    The satisfaction I get when I fix errors and bugs and create working code reminds me that programming is what I am passionate about.
-                  </p>
-                </div>
+            </div><br>
+            <div class="row text-center">
+              <ul class="list-inline social-buttons">
+                  <li>
+                    <a href="mailto:tommyhuynh93@gmail.com?subject=Hi Tommy, I would love to chat!"><i class="fa fa-envelope fa-3x"></i></a>
+                  </li>
+                  <li><a href="https://twitter.com/tommyhuynh93"><i class="fa fa-twitter fa-3x"></i></a>
+                  </li>
+                  <li><a href="https://github.com/tdhuynh"><i class="fa fa-github fa-3x"></i></a>
+                  </li>
+                  <li><a href="https://www.linkedin.com/in/tommy-d-huynh"><i class="fa fa-linkedin fa-3x"></i></a>
+                  </li>
+              </ul>
             </div>
             <br>
             <div class="row text-center">
-              <ul class="list-inline social-buttons">
+              <ul class="list-inline" style="height:40px width:40px">
                 <li>
-                  <a href="#page-top"><i class='fa fa-angle-double-up'></i></a>
+                  <a href="#page-top"><i class='fa fa-angle-double-up fa-5x'></i></a>
                 </li>
               </ul>
             </div>
@@ -350,6 +354,7 @@
                                 <div class="row">
                                   <a href="http://arcane-reef-60277.herokuapp.com/" target="_blank"><button type="button" class="btn btn-primary btn-lg">View Live</button></a>
                                   <a href="https://github.com/tdhuynh/final_project" target="_blank"><button type="button" class="btn btn-primary btn-lg">View Code</button></a>
+                                  <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-play "></i> Video Demo</button></a>
                                 </div>
                                 <br>
                                 <div class="row">
@@ -443,6 +448,45 @@
         </div>
     </div>
 
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h2>Seekers</h2>
+                                <div class="row text-center">
+                                  <video id="my-video" class="video-js" controls preload="auto" width="720" height="512"
+                                    poster="{% static 'img/portfolio/seekers-preview.png' %}" data-setup="{}">
+                                      <source src="{% static 'video/demodayrecording.mp4' %}" type='video/mp4'>
+                                      <p class="vjs-no-js">
+                                        To view this video please enable JavaScript, and consider upgrading to a web browser that
+                                        <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                                      </p>
+                                    </video>
+                                </div><br>
+                                <div class="row">
+                                  <a href="http://arcane-reef-60277.herokuapp.com/" target="_blank"><button type="button" class="btn btn-primary btn-lg">View Live</button></a>
+                                  <a href="https://github.com/tdhuynh/final_project" target="_blank"><button type="button" class="btn btn-primary btn-lg">View Code</button></a>
+                                </div>
+                                <br>
+                                <div class="row">
+                                  <button type="button" class="btn btn-primary btn-lg" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- jQuery -->
     <script src="static/vendor/jquery/jquery.min.js"></script>
@@ -459,6 +503,7 @@
 
     <!-- Theme JavaScript -->
     <script src="static/js/agency.min.js"></script>
+    <script src="http://vjs.zencdn.net/5.8.8/video.js"></script>
 
 </body>
 
